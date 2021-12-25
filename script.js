@@ -1,4 +1,4 @@
-(function (window) {
+(function () {
 // *******************************
 // START HERE IF YOU WANT A MORE CHALLENGING STARTING POINT FOR THIS ASSIGNMENT
 // *******************************
@@ -42,7 +42,7 @@ var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula"
 // using the 'speak' method or either helloSpeaker's or byeSpeaker's
 // 'speak' method.
 // See Lecture 50, part 1
-for (var i in names) {
+for (var i = 0; i < names.length; i++) {
 
   // STEP 11:
   // Retrieve the first letter of the current name in the loop.
@@ -64,4 +64,4 @@ for (var i in names) {
      window.helloSpeaker.speak(names[i]);
   }
 }
-})(window);
+})();
